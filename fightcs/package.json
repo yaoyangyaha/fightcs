@@ -1,0 +1,29 @@
+{
+  "name": "fightcs",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "element-plus": "^2.7.6",
+    "pinia": "^2.1.7",
+    "v-wave": "^2.0.0",
+    "vue": "^3.4.29",
+    "vue-responsive-video-background-player": "^2.3.1",
+    "vue-router": "^4.3.3",
+    "vue-typed-js": "^0.1.2",
+    "vue-videobg": "^2.0.0",
+    "vue3-video-play": "^1.3.2",
+    "vue3typed": "^0.1.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.5",
+    "@vitejs/plugin-vue-jsx": "^4.0.0",
+    "vite": "^5.3.1",
+    "vite-plugin-vue-devtools": "^7.3.1"
+  }
+}

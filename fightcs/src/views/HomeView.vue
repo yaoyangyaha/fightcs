@@ -15,6 +15,12 @@ video{
   -webkit-filter: grayscale(20%);
 }
 
+@font-face {
+  font-family: "cs";
+  src: url('../assets/font/cs_regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
 
 
 
@@ -23,18 +29,20 @@ video{
 
 <template>
   <video src="../assets/bg.mp4" loop="loop" autoplay="autoplay" muted></video>
-  <div >
-  <vuetyped
-        :strings="['Welcome to','FightingCS!']"
-        :loop="true"
-        :startDelay="300"
-        :typeSpeed="100"
-        :backSpeed="50"
-    >
-      <h1  class="typing" style="color: #ff0000"></h1>
-    </vuetyped>
-    <br/>
-    <el-text size="large" type="danger">hello,world,this is fightcs!</el-text>
-  </div>
+  <el-row justify="center">
+    <el-col :span="24" >
+      <vuetyped
+            :strings="['Welcome to','FightingCS!']"
+            :loop="true"
+            :startDelay="300"
+            :typeSpeed="100"
+            :backSpeed="50"
+        >
+        <h1  class="typing" style="color: #ff0000;font-family:cs;"></h1>
+      </vuetyped>
+      <br/>
+      <h3  style="color: #fb4646;font-family:cs;">hello,world,this is fightcs!</h3>
+    </el-col>
+  </el-row>
 
 </template>
